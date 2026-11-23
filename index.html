@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0"> 
+  <title>DOM Manipulation & Events</title> 
+  <style> 
+    body { font-family: Arial, sans-serif;
+          max-width: 600px; 
+          margin: 40px auto;
+          padding: 0 20px; }
+    section { margin-bottom: 30px; 
+             padding: 15px;
+             border: 1px solid #ccc;
+             border-radius: 6px; } 
+    highlight { background-color: #fef08a; 
+               font-weight: bold;
+               padding: 4px 8px; }
+    li { margin: 8px 0; } 
+    remove-btn { margin-left: 10px; 
+                color: #b91c1c; 
+                cursor: pointer; } 
+  </style>
+</head> 
+  <body>
+    <h1>DOM Manipulation & Events</h1>
+    
+    <!-- 1. Button changes content -->
+    <section> 
+      <h2>1. Button Text Update</h2>
+      <p id="status-text">Waiting for button click...</p>
+      <button id="change-text-btn" type="button">Click Me</button>
+    </section>
+    
+    <!-- 2. Style changes on input --> 
+    <section>
+      <h2>2. Live Style Update on Input</h2> 
+      <label for="color-input">Type anything to change the preview box below:</label><br><br>
+      <input id="color-input" type="text"placeholder="Start typing here...">
+      <p id="live-preview">Watch my style change as you type!</p>
+    </section>
+    
+    <!-- 3. Dynamic list (Add + Bonus Remove) --> 
+    <section>
+      <h2>3. Dynamic Task List</h2>
+      <input id="item-input" type="text" placeholder="Enter a new item..."> 
+      <buttonid="add-item-btn" type="button">Add Item</button> 
+        <ul id="item-list"></ul> </section>
+    <scriptsrc="script.js"></script>
+  </body> 
+</html>
